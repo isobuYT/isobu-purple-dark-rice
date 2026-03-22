@@ -9,9 +9,11 @@
 
 ---
 
-## 󰹑  Screenshots
+## 󰹑 Screenshots
 
-![screenshots](2.png)
+<p align="center">
+  <img src="screenshots/1.png" width="100%" />
+</p>
 
 ## 🖥️ Setup
 
