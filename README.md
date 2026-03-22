@@ -9,7 +9,7 @@
 
 ---
 
-## 󱣵  Screenshots
+## 📸 Screenshots
 
 <p align="center">
   <img src="screenshots/1.png" width="100%" />
@@ -159,7 +159,7 @@ dotfiles/
 ```
 
 ---
-# 󰿃 License
+## 📄 License
 ![license](https://img.shields.io/badge/License-MIT-9400D3?style=flat)
 
 <p align="center">made with 💜 on arch linux</p>
