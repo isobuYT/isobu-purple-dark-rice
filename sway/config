@@ -2,6 +2,8 @@ set $mod Mod4
 set $term kitty
 set $menu pgrep wofi >/dev/null 2>&1 && killall wofi || wofi --show drun 
 
+# Wallpapers
+
 output * bg ~/Downloads/wallpaper1.jpg fill
 
    input type:keyboard {
