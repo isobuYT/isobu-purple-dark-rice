@@ -6,6 +6,7 @@
 ![wm](https://img.shields.io/badge/WM-Sway-9400D3?style=flat)
 ![terminal](https://img.shields.io/badge/Terminal-Kitty-9400D3?style=flat)
 ![font](https://img.shields.io/badge/Font-Maple_Mono-e0d0ff?style=flat)
+![license](https://img.shields.io/badge/License-MIT-9400D3?style=flat)
 
 ---
 
@@ -159,7 +160,5 @@ dotfiles/
 ```
 
 ---
-## 📄 License
-![license](https://img.shields.io/badge/License-MIT-9400D3?style=flat)
 
 <p align="center">made with 💜 on arch linux</p>
