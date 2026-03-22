@@ -1,42 +1,37 @@
 * {
   font-family: Maple Mono;
+  font-size: 14px;
   background: transparent;
   color: #e0d0ff;
 }
 
 #window {
-  color: #e0d0ff;
-  border-color: #e0d0ff;
-  border-style: solid;
-  border-width: 1px;
-
-  /*Linear gradient background instead of standard background, because it makes cleaner border-radius cuts, issa bug :p*/
   background-image: linear-gradient(to bottom, #141216 100%);
+  border: 1px solid #9400D3;
   border-radius: 14px;
-}
-#scroll {
-  border-top-style: solid;
-  border-width: 1px;
-  border-color: #e0d0ff;
-}
-#inner-box {
-  padding-top: 12px;
-}
-#entry {
-  border-style: none;
-  border-color: #e0d0ff;
   color: #e0d0ff;
-  padding: 6px;
-  margin-bottom: 8px;
-  margin-left: 12px;
-  margin-right: 12;
+}
 
-  border-radius: 12px;
+#scroll {
+  border-top: 1px solid #9400D3;
+}
+
+#inner-box {
+  padding-top: 10px;
+}
+
+#entry {
+  color: #e0d0ff;
+  padding: 8px 10px;
+  margin: 0px 10px 6px 10px;
+  border-radius: 10px;
+  border: none;
+  transition: 120ms;
 }
 
 #entry:selected {
-  background: #27232b;
-  color: #e0d0ff;
+  background: rgba(148, 0, 211, 0.2);
+  color: #9400D3;
   font-weight: bold;
   outline: none;
 }
@@ -44,25 +39,17 @@
 #input {
   background-color: #141216;
   color: #e0d0ff;
-  border-color: #e0d0ff;
-
-  border-style: none;
-  border-bottom-style: solid;
-  border-width: 1px;
-
+  border: none;
+  border-bottom: 1px solid #9400D3;
+  border-radius: 10px 10px 0px 0px;
+  padding: 14px;
+  margin: 6px;
   font-style: normal;
-
-  border-radius: 8;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-
-  padding: 12px;
-  margin: 8px;
 }
+
 #input:focus {
-  background: #27232b;
-  background-color: #27232b;
-  border-color: #ac82e9;
+  background-color: #1e1a22;
+  border-bottom: 1px solid #a020f0;
   font-style: italic;
 }
 
