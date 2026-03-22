@@ -80,7 +80,7 @@ git clone https://github.com/isobuYT/isobu-purple-dark-rice.git ~/dotfiles
 
 ### 2. Create config directories
 ```bash
-mkdir -p ~/.config/{sway,waybar,kitty,wofi,fastfetch,btop,cava}
+mkdir -p ~/.config/{sway,waybar,kitty,wofi,fastfetch,btop,cava,nvim}
 mkdir -p ~/.config/oomox/colors
 ```
 
@@ -95,7 +95,9 @@ cp ~/dotfiles/wofi/style.css     ~/.config/wofi/style.css
 cp ~/dotfiles/fastfetch/config.jsonc ~/.config/fastfetch/config.jsonc
 cp ~/dotfiles/.themes/isobu-purple-dark ~/.config/oomox/colors/
 cp ~/dotfiles/btop/btop.conf     ~/.config/btop/btop.conf
-cp ~/dotfiles/cava/config     ~/.config/cava/config
+cp ~/dotfiles/btop/themes/isobu-purple.theme ~/.config/btop/themes/isobu-purple.theme
+cp ~/dotfiles/cava/config        ~/.config/cava/config
+cp ~/dotfiles/nvim/init.lua      ~/.config/nvim/init.lua
 
 
 ```
@@ -172,7 +174,9 @@ dotfiles/
 ├── fastfetch/
 │   └── config.jsonc
 ├── btop/
-│   └── btop.conf
+│   ├── btop.conf
+│   └── themes
+│       └── isobu-purple.theme 
 ├── cava/
 │   └── config
 ├── nvim/
