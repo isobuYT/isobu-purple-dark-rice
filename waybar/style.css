@@ -1,0 +1,69 @@
+* {
+  font-family: maple mono;
+  font-size: 13px;
+  border-radius: 8px;
+  padding: 0px;
+  background: transparent;
+}
+
+window#waybar {
+  background-color: rgba(20, 18, 22, 0);
+}
+
+/* ── shared module style ── */
+#network, #clock, #tray, #workspaces,
+#language, #pulseaudio, #mpris, #cpu {
+  background-color: rgba(20, 18, 22, 0.5);
+  margin: 6px 0px 6px 6px;
+  padding: 2px 8px;
+  border-radius: 8px;
+  color: #e0d0ff;
+  border: 1px solid #9400D3;
+  transition-duration: 120ms;
+}
+
+/* ── hover ── */
+#network:hover, #clock:hover, #language:hover,
+#pulseaudio:hover, #mpris:hover, #cpu:hover {
+  background-color: rgba(148, 0, 211, 0.15);
+  color: #9400D3;
+}
+
+/* ── workspaces buttons ── */
+#workspaces button {
+  transition-duration: 100ms;
+  all: initial;
+  min-width: 0;
+  font-weight: bold;
+  color: #e0d0ff;
+  margin-right: 0.2cm;
+  margin-left: 0.2cm;
+}
+
+#workspaces button:hover {
+  transition-duration: 120ms;
+  color: #a020f0;
+}
+
+#workspaces button.focused {
+  color: #9400D3;
+  font-weight: bold;
+}
+
+#workspaces button.active {
+  color: #9400D3;
+  font-weight: bold;
+}
+
+#workspaces button.urgent {
+  color: #fcb167;
+}
+
+/* ── tray menu ── */
+#tray menu          { background-color: #141216; color: #e0d0ff; padding: 4px; }
+#tray menu menuitem { background: #27232b; margin: 3px; color: #e0d0ff; border-radius: 4px; }
+#tray menu menuitem:hover { color: #9400D3; font-weight: bold; }
+
+/* ── cpu states ── */
+#cpu.warning  { color: #fcb167; }
+#cpu.critical { color: #fc4649; }

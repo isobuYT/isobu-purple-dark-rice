@@ -1,0 +1,69 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+    "logo": {
+        "source": "/home/isobu/Downloads/ft2.gif",       
+	"type": "kitty-direct",
+	"animate": true,
+        "width": 24,
+        "height": 11
+  },
+    "display": {
+    "color": {
+        "keys": "38;2;148;0;211",
+        "title": "38;2;148;0;211",
+        "separator": "38;2;148;0;211"
+    }
+},
+  "modules": [
+{
+    "type": "BIOS",
+    "key": "bios",
+    "keyColor": "38;2;148;0;211"      
+},
+{
+    "type": "cpu",
+    "key": "󰻠cpu",
+    "keyColor": "38;2;148;0;211"
+},
+{
+    "type": "os",
+    "key": "󰣇os",
+    "keyColor": "38;2;148;0;211"     
+},
+{
+    "type": "wm",
+    "key": "wm",
+    "keyColor": "38;2;148;0;211"       
+},
+{
+    "type": "host",
+    "key": "host",
+    "keyColor": "38;2;148;0;211"       
+},
+{
+    "type": "Swap",
+    "key": "󰓡swap",
+    "keyColor": "38;2;148;0;211"        
+},
+{
+    "type": "Terminal",
+    "key": "terminal",
+    "keyColor": "38;2;148;0;211"       
+},
+{
+    "type": "OpenGL",
+    "key": "󰊪Gl",
+    "keyColor": "38;2;148;0;211"
+},
+{
+    "type": "Locale",
+    "key": "󰜚local",
+    "keyColor": "38;2;148;0;211"        
+},
+{
+    "type": "memory",
+    "key": "󰍛memory",
+    "keyColor": "38;2;148;0;211"        
+}
+ ]
+}

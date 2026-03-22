@@ -1,0 +1,92 @@
+set $mod Mod4
+set $term kitty
+set $menu pgrep wofi >/dev/null 2>&1 && killall wofi || wofi --show drun 
+
+output * bg ~/Downloads/wallpaper1.jpg fill
+
+   input type:keyboard {
+	xkb_layout "eu,ua"
+	xkb_options grp:alt_shift_toggle   
+}
+
+########
+#Binds
+#######
+
+    bindsym $mod+Return exec $term
+    bindsym $mod+q kill
+    bindsym $mod+a exec $menu
+    floating_modifier $mod normal
+    bindsym $mod+Shift+c reload
+    bindsym $mod+Left focus left
+    bindsym $mod+Down focus down
+    bindsym $mod+Up focus up
+    bindsym $mod+Right focus right
+    bindsym $mod+Shift+Left move left
+    bindsym $mod+Shift+Down move down
+    bindsym $mod+Shift+Up move up
+    bindsym $mod+Shift+Right move right
+
+# Workspaces:
+
+    bindsym $mod+1 workspace number 1
+    bindsym $mod+2 workspace number 2
+    bindsym $mod+3 workspace number 3
+    bindsym $mod+4 workspace number 4
+    bindsym $mod+5 workspace number 5
+    bindsym $mod+6 workspace number 6
+    bindsym $mod+7 workspace number 7
+    bindsym $mod+8 workspace number 8
+    bindsym $mod+9 workspace number 9
+    bindsym $mod+0 workspace number 10
+    bindsym $mod+Shift+1 move container to workspace number 1
+    bindsym $mod+Shift+2 move container to workspace number 2
+    bindsym $mod+Shift+3 move container to workspace number 3
+    bindsym $mod+Shift+4 move container to workspace number 4
+    bindsym $mod+Shift+5 move container to workspace number 5
+    bindsym $mod+Shift+6 move container to workspace number 6
+    bindsym $mod+Shift+7 move container to workspace number 7
+    bindsym $mod+Shift+8 move container to workspace number 8
+    bindsym $mod+Shift+9 move container to workspace number 9
+    bindsym $mod+Shift+0 move container to workspace number 10
+
+# Layout stuff:
+
+    bindsym $mod+b splith
+    bindsym $mod+v splitv
+    bindsym $mod+Shift+Tab layout stacking
+    bindsym $mod+w layout tabbed
+    bindsym $mod+e layout toggle split
+    bindsym $mod+f fullscreen
+    bindsym $mod+Shift+space floating toggle
+    bindsym $mod+space focus mode_toggle
+    
+# Utilities:
+
+    bindsym --locked XF86AudioMute exec pactl set-sink-mute \@DEFAULT_SINK@ toggle
+    bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume \@DEFAULT_SINK@ -5%
+    bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume \@DEFAULT_SINK@ +5%
+    bindsym F1 exec pactl set-source-mute \@DEFAULT_SOURCE@ toggle
+    bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
+    bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
+    bindsym Print exec grim
+
+# Colors
+
+client.focused          #9400D3 #141216 #e0d0ff #9400D3 #9400D3
+client.focused_inactive #9400D3 #141216 #e0d0ff #9400D3 #9400D3
+client.unfocused        #9400D3 #141216 #e0d0ff #9400D3 #9400D3
+client.urgent           #fcb167 #141216 #e0d0ff #fcb167 #fcb167
+client.placeholder      #9400D3 #141216 #e0d0ff #9400D3 #9400D3
+
+# Gaps and Borders
+
+gaps inner 12px
+gaps outer 6px
+default_border pixel 1px
+default_floating_border pixel 1px
+
+# Execs
+exec waybar 
+
+include /etc/sway/config.d/*
