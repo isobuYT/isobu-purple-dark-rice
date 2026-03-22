@@ -59,6 +59,14 @@ paru -S maplemono-nf themix-gui btop calcurse
 
 # optional
 sudo pacman -S pavucontrol nmtui grimshot
+
+# fastfetch-gif-support
+git clone https://github.com/Maybe4a6f7365/fastfetch-gif-support.git
+cd fastfetch-gif-support
+mkdir build && cd build
+cmake ..
+make
+sudo make install
 ```
 
 ---
@@ -67,7 +75,7 @@ sudo pacman -S pavucontrol nmtui grimshot
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/isobuYT/dotfiles.git ~/dotfiles
+git clone https://github.com/isobuYT/isobu-riverwm-black-white.git ~/dotfiles
 ```
 
 ### 2. Create config directories
