@@ -1,4 +1,4 @@
-# 🍚 isobu dotfiles
+# isobu dotfiles
 
 > purple dark rice for arch linux + sway
 
