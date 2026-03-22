@@ -75,7 +75,7 @@ sudo make install
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/isobuYT/isobu-riverwm-black-white.git ~/dotfiles
+git clone https://github.com/isobuYT/isobu-purple-dark-rice.git ~/dotfiles
 ```
 
 ### 2. Create config directories
