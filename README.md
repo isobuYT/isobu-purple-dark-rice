@@ -9,6 +9,13 @@
 
 ---
 
+## 󰹑 Screenshots
+
+<p align="center">
+  <img src="screenshots/20260322_11h18m03s_grim.png" width="49%" />
+  <img src="screenshots/20260322_11h19m03s_grim.png" width="49%" />
+</p>
+
 ## 🖥️ Setup
 
 | Component  | Program         |
