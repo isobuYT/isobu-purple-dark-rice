@@ -80,7 +80,7 @@ git clone https://github.com/isobuYT/isobu-purple-dark-rice.git ~/dotfiles
 
 ### 2. Create config directories
 ```bash
-mkdir -p ~/.config/{sway,waybar,kitty,wofi,fastfetch}
+mkdir -p ~/.config/{sway,waybar,kitty,wofi,fastfetch,btop,cava}
 mkdir -p ~/.config/oomox/colors
 ```
 
@@ -93,7 +93,11 @@ cp ~/dotfiles/kitty/kitty.conf   ~/.config/kitty/kitty.conf
 cp ~/dotfiles/wofi/config        ~/.config/wofi/config
 cp ~/dotfiles/wofi/style.css     ~/.config/wofi/style.css
 cp ~/dotfiles/fastfetch/config.jsonc ~/.config/fastfetch/config.jsonc
-cp ~/dotfiles/themix/isobu-purple-dark ~/.config/oomox/colors/
+cp ~/dotfiles/.themes/isobu-purple-dark ~/.config/oomox/colors/
+cp ~/dotfiles/btop/btop.conf     ~/.config/btop/btop.conf
+cp ~/dotfiles/cava/config     ~/.config/cava/config
+
+
 ```
 
 ### 4. Install GTK theme
@@ -107,14 +111,18 @@ themix-gui
 gsettings set org.gnome.desktop.interface gtk-theme 'isobu-purple-dark'
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 ```
-
-### 6. Install font
+### 6. Install icons theme and apply
+```bash
+yay -S papirus-folders-git
+papirus-folders -C violet --theme Papirus-Dark
+```
+### 7. Install font
 ```bash
 paru -S maplemono-nf
 fc-cache -fv
 ```
 
-### 7. Set waybar network interface
+### 8. Set waybar network interface
 
 Edit `~/.config/waybar/config` and change `wlan0` to your interface:
 ```bash
@@ -127,7 +135,7 @@ ip link show
 }
 ```
 
-### 8. Start sway
+### 9. Start sway
 ```bash
 sway
 ```
@@ -163,8 +171,14 @@ dotfiles/
 │   └── style.css
 ├── fastfetch/
 │   └── config.jsonc
-└── themix/
-    └── isobu-purple-dark
+├── btop/
+│   └── btop.conf
+├── cava/
+│   └── config
+├── nvim/
+│   └── init.lua
+├── screenshots/
+└── wallpapers/
 ```
 
 ---
