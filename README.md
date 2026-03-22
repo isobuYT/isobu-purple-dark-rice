@@ -11,7 +11,7 @@
 
 ## 󰹑  Screenshots
 
-![screenshot](20261230322_11h19m03s_grim.png)
+![screenshots](1.png)
 
 ## 🖥️ Setup
 
