@@ -13,7 +13,7 @@
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="screenshots/1.png" width="100%" />
+  <img src="screenshots/previewgif.gif" width="100%" />
 </p>
 
 ## 🖥️ Setup
