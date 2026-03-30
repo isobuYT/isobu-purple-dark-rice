@@ -108,9 +108,10 @@ cp ~/dotfiles/kitty/kitty.conf   ~/.config/kitty/kitty.conf
 cp ~/dotfiles/wofi/config        ~/.config/wofi/config
 cp ~/dotfiles/wofi/style.css     ~/.config/wofi/style.css
 cp ~/dotfiles/fastfetch/config.jsonc ~/.config/fastfetch/config.jsonc
-cp ~/dotfiles/.themes/isobu-purple-dark ~/.config/.themes
+cp ~/dotfiles/fastfetch/ft2.gif.   ~/.config/fastfetch/ft2.gif
+cp ~/dotfiles/.themes/isobu-purple-dark ~/.config/.themes/isobu-purple-dark
 cp ~/dotfiles/btop/btop.conf     ~/.config/btop/btop.conf
-cp ~/dotfiles/btop/themes/isobu-purple.theme ~/.config/btop/themes
+cp ~/dotfiles/btop/themes/isobu-purple.theme ~/.config/btop/themes/isobu-purple.theme
 cp ~/dotfiles/cava/config        ~/.config/cava/config
 cp ~/dotfiles/nvim/init.lua      ~/.config/nvim/init.lua
 
