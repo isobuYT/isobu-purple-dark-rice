@@ -53,7 +53,7 @@
 ## 📦 Dependencies
 ```bash
 # core
-sudo pacman -S sway waybar kitty wofi fastfetch playerctl cava pavucontrol nmtui grimshot
+sudo pacman -S sway waybar kitty wofi fastfetch playerctl cava pavucontrol nmtui grimshot nvim calcurse
 
 # aur helper (yay)
 git clone https://aur.archlinux.org/yay.git
@@ -61,10 +61,7 @@ cd yay
 makepkg -si
 
 # aur (use paru or yay)
-yay -S maplemono-nf themix-gui btop calcurse
-
-# optional
-sudo pacman -S 
+yay -S maplemono-nf themix-gui
 
 # fastfetch-gif-support
 git clone https://github.com/Maybe4a6f7365/fastfetch-gif-support.git
