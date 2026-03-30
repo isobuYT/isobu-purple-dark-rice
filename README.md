@@ -52,7 +52,7 @@
 ## 📦 Dependencies
 ```bash
 # core
-sudo pacman -S sway waybar kitty wofi fastfetch playerctl
+sudo pacman -S sway waybar kitty wofi fastfetch playerctl cava 
 
 # aur (use paru or yay)
 paru -S maplemono-nf themix-gui btop calcurse
@@ -80,7 +80,15 @@ git clone https://github.com/isobuYT/isobu-purple-dark-rice.git ~/dotfiles
 
 ### 2. Create config directories
 ```bash
-mkdir -p ~/.config/{sway,waybar,kitty,wofi,fastfetch,btop,cava,nvim}
+mkdir -p ~/.config/sway
+mkdir -p ~/.config/waybar
+mkdir -p ~/.config/kitty
+mkdir -p ~/.config/wofi
+mkdir -p ~/.config/fastfetch
+mkdir -p ~/.config/btop
+mkdir -p ~/.config/btop/theme
+
+{sway,waybar,kitty,wofi,fastfetch,btop,cava,nvim}
 mkdir -p ~/.config/oomox/colors
 ```
 
