@@ -40,7 +40,8 @@
 
 | Role       | Hex       | Preview |
 |------------|-----------|---------|
-| Background | `#141216` | ![](https://placehold.co/60x20/141216/141216) |
+| Background | `#141216` | ![](https://placehold.co/60x20/141216/141216)
+ |
 | Foreground | `#e0d0ff` | ![](https://placehold.co/60x20/e0d0ff/e0d0ff) |
 | Accent     | `#9400D3` | ![](https://placehold.co/60x20/9400D3/9400D3) |
 | Accent 2   | `#a020f0` | ![](https://placehold.co/60x20/a020f0/a020f0) |
@@ -52,13 +53,18 @@
 ## 📦 Dependencies
 ```bash
 # core
-sudo pacman -S sway waybar kitty wofi fastfetch playerctl cava 
+sudo pacman -S sway waybar kitty wofi fastfetch playerctl cava pavucontrol nmtui grimshot
+
+# aur helper (yay)
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
 
 # aur (use paru or yay)
-paru -S maplemono-nf themix-gui btop calcurse
+yay -S maplemono-nf themix-gui btop calcurse
 
 # optional
-sudo pacman -S pavucontrol nmtui grimshot
+sudo pacman -S 
 
 # fastfetch-gif-support
 git clone https://github.com/Maybe4a6f7365/fastfetch-gif-support.git
@@ -67,6 +73,9 @@ mkdir build && cd build
 cmake ..
 make
 sudo make install
+
+
+
 ```
 
 ---
