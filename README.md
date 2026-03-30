@@ -91,11 +91,12 @@ mkdir -p ~/.config/waybar
 mkdir -p ~/.config/kitty
 mkdir -p ~/.config/wofi
 mkdir -p ~/.config/fastfetch
+mkdir -p ~/.config/.themes
 mkdir -p ~/.config/btop
 mkdir -p ~/.config/btop/themes
 mkdir -p ~/.config/cava
 mkdir -p ~/.config/nvim
-mkdir -p ~/.config/oomox/colors
+mkdir -p ~/.config/.themes
 ```
 
 ### 3. Copy configs
@@ -107,9 +108,9 @@ cp ~/dotfiles/kitty/kitty.conf   ~/.config/kitty/kitty.conf
 cp ~/dotfiles/wofi/config        ~/.config/wofi/config
 cp ~/dotfiles/wofi/style.css     ~/.config/wofi/style.css
 cp ~/dotfiles/fastfetch/config.jsonc ~/.config/fastfetch/config.jsonc
-cp ~/dotfiles/.themes/isobu-purple-dark ~/.config/.themes/isobu-purple-dark
+cp ~/dotfiles/.themes/isobu-purple-dark ~/.config/.themes
 cp ~/dotfiles/btop/btop.conf     ~/.config/btop/btop.conf
-cp ~/dotfiles/btop/themes/isobu-purple.theme ~/.config/btop/themes/isobu-purple.theme
+cp ~/dotfiles/btop/themes/isobu-purple.theme ~/.config/btop/themes
 cp ~/dotfiles/cava/config        ~/.config/cava/config
 cp ~/dotfiles/nvim/init.lua      ~/.config/nvim/init.lua
 
@@ -157,7 +158,7 @@ sway
 | Key                  | Action              |
 |----------------------|---------------------|
 | `Super + Enter`      | Open Kitty          |
-| `Super + D`          | Open Wofi           |
+| `Super + A`          | Open Wofi           |
 | `Super + Q`          | Close window        |
 | `Super + 1-5`        | Switch workspace    |
 | `Super + Shift + 1-5`| Move to workspace   |
