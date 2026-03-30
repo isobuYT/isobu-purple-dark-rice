@@ -146,6 +146,12 @@ ip link show
 }
 ```
 
+### 9. Optionals
+```bash
+sudo pacman -S xdg-desktop-portal xdg-desktop-portal-wlr
+systemctl --user enable xdg-desktop-portal
+systemctl --user enable xdg-desktop-portal-wlr
+```
 ### 8. Start sway
 ```bash
 sway
