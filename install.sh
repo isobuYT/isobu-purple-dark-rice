@@ -13,11 +13,11 @@ fi
 echo "===> Installing packages..."
 sudo pacman -S --needed --noconfirm \
     git sway swaybg swaylock swayidle \
-    waybar alacritty foot \
+    waybar foot \
     wofi rofi kitty \
     grim slurp wl-clipboard \
     pipewire pipewire-pulse wireplumber \
-    pavucontrol \
+    pavucontrol btop cava\
     noto-fonts noto-fonts-emoji ttf-dejavu \
     brightnessctl playerctl \
     network-manager-applet

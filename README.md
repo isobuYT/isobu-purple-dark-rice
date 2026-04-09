@@ -65,7 +65,13 @@ cd yay
 makepkg -si
 
 # aur (use paru or yay)
-yay -S maplemono-nf themix-gui
+yay -S ttf-jetbrains-mono-nerd
+
+mkdir -p ~/.local/share/fonts/MapleMono
+cd ~/.local/share/fonts/MapleMono
+wget https://github.com/subframe7536/maple-font/releases/latest/download/MapleMono-NF.zip
+unzip MapleMono-NF.zip
+fc-cache -fv
 
 # fastfetch-gif-support
 git clone https://github.com/Maybe4a6f7365/fastfetch-gif-support.git
