@@ -92,13 +92,8 @@ gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 yay -S papirus-folders-git
 papirus-folders -C violet --theme Papirus-Dark
 ```
-### 4.
-```bash
-yay -S maplemono-nf
-fc-cache -fv
-```
 
-### 5.
+### 4.
 
 Edit `~/.config/waybar/config` and change `wlan0` to your interface:
 ```bash
@@ -111,13 +106,13 @@ ip link show
 }
 ```
 
-### 6.
+### 5.
 ```bash
 sudo pacman -S xdg-desktop-portal xdg-desktop-portal-wlr
 systemctl --user enable xdg-desktop-portal
 systemctl --user enable xdg-desktop-portal-wlr
 ```
-### 7.
+### 6.
 ```bash
 sway
 ```
