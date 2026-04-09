@@ -50,72 +50,9 @@
 
 ---
 
-## 📦 Dependencies
+## 1. install script
 ```bash
-# core
-sudo pacman -S sway waybar kitty wofi fastfetch playerctl cava pavucontrol nmtui grimshot nvim calcurse
-
-# aur helper (yay)
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-
-# aur (use paru or yay)
-yay -S maplemono-nf themix-gui
-
-# fastfetch-gif-support
-git clone https://github.com/Maybe4a6f7365/fastfetch-gif-support.git
-cd fastfetch-gif-support
-mkdir build && cd build
-cmake ..
-make
-sudo make install
-
-
-
-```
-
----
-
-## 🚀 Installation
-
-### 1. Clone the repo
-```bash
-git clone https://github.com/isobuYT/isobu-purple-dark-rice.git ~/dotfiles
-```
-
-### 2. Create config directories
-```bash
-mkdir -p ~/.config/sway
-mkdir -p ~/.config/waybar
-mkdir -p ~/.config/kitty
-mkdir -p ~/.config/wofi
-mkdir -p ~/.config/fastfetch
-mkdir -p ~/.config/.themes
-mkdir -p ~/.config/btop
-mkdir -p ~/.config/btop/themes
-mkdir -p ~/.config/cava
-mkdir -p ~/.config/nvim
-mkdir -p ~/.config/.themes
-```
-
-### 3. Copy configs
-```bash
-cp ~/dotfiles/sway/config        ~/.config/sway/config
-cp ~/dotfiles/waybar/config      ~/.config/waybar/config
-cp ~/dotfiles/waybar/style.css   ~/.config/waybar/style.css
-cp ~/dotfiles/kitty/kitty.conf   ~/.config/kitty/kitty.conf
-cp ~/dotfiles/wofi/config        ~/.config/wofi/config
-cp ~/dotfiles/wofi/style.css     ~/.config/wofi/style.css
-cp ~/dotfiles/fastfetch/config.jsonc ~/.config/fastfetch/config.jsonc
-cp ~/dotfiles/fastfetch/ft2.gif.   ~/.config/fastfetch/ft2.gif
-cp ~/dotfiles/.themes/isobu-purple-dark ~/.config/.themes/isobu-purple-dark
-cp ~/dotfiles/btop/btop.conf     ~/.config/btop/btop.conf
-cp ~/dotfiles/btop/themes/isobu-purple.theme ~/.config/btop/themes/isobu-purple.theme
-cp ~/dotfiles/cava/config        ~/.config/cava/config
-cp ~/dotfiles/nvim/init.lua      ~/.config/nvim/init.lua
-
-
+bash <(curl -s https://raw.githubusercontent.com/isobuYT/isobu-purple-dark-rice/main/install.sh)
 ```
 
 ### 4. Apply GTK theme
