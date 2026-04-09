@@ -55,23 +55,44 @@
 bash <(curl -s https://raw.githubusercontent.com/isobuYT/isobu-purple-dark-rice/main/install.sh)
 ```
 
-### 4. Apply GTK theme
+### Optionals
+
+### 1.
+```bash
+# aur helper (yay)
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+
+# aur (use paru or yay)
+yay -S maplemono-nf themix-gui
+
+# fastfetch-gif-support
+git clone https://github.com/Maybe4a6f7365/fastfetch-gif-support.git
+cd fastfetch-gif-support
+mkdir build && cd build
+cmake ..
+make
+sudo make install
+```
+
+### 2.
 ```bash
 gsettings set org.gnome.desktop.interface gtk-theme 'isobu-purple-dark'
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 ```
-### 5. Install icons theme and apply
+### 3.
 ```bash
 yay -S papirus-folders-git
 papirus-folders -C violet --theme Papirus-Dark
 ```
-### 6. Install font
+### 4.
 ```bash
 yay -S maplemono-nf
 fc-cache -fv
 ```
 
-### 7. Set waybar network interface
+### 5.
 
 Edit `~/.config/waybar/config` and change `wlan0` to your interface:
 ```bash
@@ -84,13 +105,13 @@ ip link show
 }
 ```
 
-### 9. Optionals
+### 6.
 ```bash
 sudo pacman -S xdg-desktop-portal xdg-desktop-portal-wlr
 systemctl --user enable xdg-desktop-portal
 systemctl --user enable xdg-desktop-portal-wlr
 ```
-### 8. Start sway
+### 7.
 ```bash
 sway
 ```
