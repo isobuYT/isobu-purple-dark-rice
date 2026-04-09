@@ -4,7 +4,7 @@ set $menu pgrep wofi >/dev/null 2>&1 && killall wofi || wofi --show drun
 
 # Wallpapers
 
-output * bg $HOME/.config/wallpapers/001.jpg fill
+output * bg ~/.config/wallpapers/001.jpg fill
 
    input type:keyboard {
 	xkb_layout "eu,ua"
