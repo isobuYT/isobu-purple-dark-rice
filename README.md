@@ -40,8 +40,7 @@
 
 | Role       | Hex       | Preview |
 |------------|-----------|---------|
-| Background | `#141216` | ![](https://placehold.co/60x20/141216/141216)
- |
+| Background | `#141216` | ![](https://placehold.co/60x20/141216/141216) |
 | Foreground | `#e0d0ff` | ![](https://placehold.co/60x20/e0d0ff/e0d0ff) |
 | Accent     | `#9400D3` | ![](https://placehold.co/60x20/9400D3/9400D3) |
 | Accent 2   | `#a020f0` | ![](https://placehold.co/60x20/a020f0/a020f0) |
@@ -111,10 +110,6 @@ ip link show
 sudo pacman -S xdg-desktop-portal xdg-desktop-portal-wlr
 systemctl --user enable xdg-desktop-portal
 systemctl --user enable xdg-desktop-portal-wlr
-```
-### 6.
-```bash
-sway
 ```
 
 ---
